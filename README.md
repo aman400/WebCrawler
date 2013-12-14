@@ -15,7 +15,8 @@ Requires python 3 to be installed on your machine most of Linux or Unix machines
 You can get it from http://python.org/download/
 
 
-Requires a Python library named Beautiful Soup it is available at http://www.crummy.com/software/BeautifulSoup/
+Requires a Python library named Beautiful Soup.
+It is available at http://www.crummy.com/software/BeautifulSoup/
 
 
 

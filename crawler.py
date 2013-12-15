@@ -105,7 +105,7 @@ class webcrawler:
                         self.tocrawl.add(link.get('href'))
                     print(crawl_link)
                     self.crawled.append(crawl_link)
-                except:
+                except :
                     pass
 
     # Get data on a given page.
@@ -114,10 +114,13 @@ class webcrawler:
 
         returns the page data after extracting it.
         """
-        
-        req = urllib.request.urlopen(link)
-        page = str(req.read())
-        soup = BeautifulSoup(page)
+        try:
+            req = urllib.request.urlopen(link)
+            page = str(req.read())
+            soup = BeautifulSoup(page)
+        except :
+            raise Exception("Invalid Link")
+            
         return soup    
 
     # get all crawled links

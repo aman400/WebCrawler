@@ -134,4 +134,4 @@ class webcrawler:
             print (link)
 
 link = input("Enter the link to be crawled : ")
-w = webcrawler(link)
+webcrawler(link)
